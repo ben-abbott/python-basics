@@ -81,7 +81,7 @@ json_data = [
 new_json_file_path = current_dir / TRAINER_DEMO_FILES / FILE_NAME[4]
 
 with open(new_json_file_path, mode='w') as json_file:
-    data = json.dump(json_data, json_file)
+    json.dump(json_data, json_file)
 
 with open(new_json_file_path) as read_json:
     data = json.load(read_json)
